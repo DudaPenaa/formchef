@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" href="assets/img/ios/192.png">
+    <title>checkAula</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="assets/img/undraw_up_to_date_re_nqid.svg" alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-avaliation">
+                    <div class="title">
+                        <div style="margin-top: 5rem;">
+                          <h1 style="margin-bottom: 3rem;">Formulário Avaliativo</h1>
+                          <form>
+                          
+                                <legend style="margin-bottom: 6rem; font-size: 1rem;">Qual motivo de atraso da aula?</legend>
+                                <div style="margin-top: -5rem;">
+                                  <div class="checkbox">
+                                    <input type="checkbox" id="insumos" name="motivo" value="insumos">
+                                    <label for="insumos">Problemas com insumos (qualidade, quantidade irregular, falta entre outros)</label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <input type="checkbox" id="monitoria" name="motivo" value="monitoria">
+                                    <label for="monitoria">Atraso da monitoria responsável (pontualidade)</label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <input type="checkbox" id="laboratorio-fechado" name="motivo" value="laboratorio-fechado">
+                                    <label for="laboratorio-fechado">Laboratório fechado</label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <input type="checkbox" id="equipamentos" name="motivo" value="equipamentos">
+                                    <label for="equipamentos">Problemas com equipamentos e utensílios (funcionamento, quantidade, falta entre outros)</label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <input type="checkbox" id="paps" name="motivo" value="paps">
+                                    <label for="paps">Problemas com os PAPs (documentos errados, não impressos, quantidade irregular entre outros)</label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <input type="checkbox" id="limpeza" name="motivo" value="limpeza">
+                                    <label for="limpeza">Problemas com limpeza e conservação do laboratório</label>
+                                  </div>
+                                  <div class="checkbox">
+                                    <input type="checkbox" id="manutencao" name="motivo" value="manutencao">
+                                    <label for="manutencao">Problemas com manutenção do laboratório</label>
+                                  </div>
+                                </div>
+                          
+                                <div class="outros" style="margin-top: 2rem;" >
+                                  <label for="firstname" style="display: block; font-size: 1rem;"> Outros</label>
+                                  <input type="text" name="nome" placeholder="Descreva o problema" style="border: none; background: none; border-bottom: 1px solid black; width: 80%; margin-top: 0.5rem;">
+                                   </div>
+                              <div class="continue-button" >
+                                  <button class="continue-button-left"><a href="aula.html">Voltar</a></button>
+                                  <button class="continue-button-right"><a href="insumos.html">Continuar</a></button>
+                                </div>
+                          
+                          
+                            </form>
+                        </div>
+                          <div id="myModal" class="modal">
+                            <div class="modal-content">
+                              <span class="close">&times;</span>
+                              <p>Você pode ligar para a secretaria: (81) 3413 - 6657 ou entrar em contato com nosso monitor Giovane: 81 9 XXXX - XXXX</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <script>
+                          // seleciona o modal
+                          var modal = document.getElementById("myModal");
+                          
+                          // seleciona o botão que abre o modal
+                          var btn = document.getElementById("laboratorio-fechado");
+                          
+                          // seleciona o elemento <span> que fecha o modal
+                          var span = document.getElementsByClassName("close")[0];
+                          
+                          // quando o usuário clica no botão, abre o modal
+                          btn.onclick = function() {
+                            modal.style.display = "block";
+                          }
+                          
+                          // quando o usuário clica no <span> (x), fecha o modal
+                          span.onclick = function() {
+                            modal.style.display = "none";
+                          }
+                          
+                          // quando o usuário clica fora do modal, fecha-o
+                          window.onclick = function(event) {
+                            if (event.target == modal) {
+                              modal.style.display = "none";
+                            }
+                          }
+                          </script>
+                    
+    
+</body>
+
+</html>

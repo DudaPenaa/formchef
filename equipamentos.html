@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" href="assets/img/ios/192.png">
+    <title>Equipamentos</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="assets/img/undraw_up_to_date_re_nqid.svg" alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1 style="margin-top: -3rem;">Formulário Avaliativo</h1>
+                    </div>
+                </div>
+
+               
+                
+                <div class="gender-inputs" style="margin-top: 1rem;">
+                    <div class="gender-title">
+                        <h6 style="margin-bottom: 3rem; font-size: 1rem;">Percepção quanto aos equipamentos e utensílios do laboratório
+                        </h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input id="sim" type="radio" name="right">
+                            <label for="sim">Positiva</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="nao" type="radio" name="right">
+                            <label for="nao">Negativa</label>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+                <div class="continue-button" >
+                    <button class="continue-button-left"><a href="insumos.html">Voltar</a></button>
+                   
+                    <button id="continuar" class="continue-button-right"><a href="checkEquipamentos.html">Continuar</a></button>
+                  </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+       const continuarBtn = document.getElementById('continuar');
+
+continuarBtn.addEventListener('click', function() {
+  if (document.getElementById('sim').checked) {
+    // Redirecionar usuário para página quando a aula começou no horário certo
+    window.location.href = 'finalizar.html';
+  } else if (document.getElementById('nao').checked) {
+    // Redirecionar usuário para página quando a aula NÃO começou no horário certo
+    window.location.href = 'checkEquipamentos.html';
+  }
+});
+
+
+      </script>
+</body>
+
+</html>

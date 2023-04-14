@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" href="assets/img/ios/192.png">
+    <title>checkEquipamentos</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="assets/img/undraw_up_to_date_re_nqid.svg" alt="">
+        </div>
+        <div class="form">
+          
+                <div class="form-avaliation">
+                    <div class="title">
+                        <div style="margin-top: 5rem;">
+                            <h1 style="margin-bottom: 2rem;">Formulário Avaliativo</h1>
+                            <form>
+                            
+                                  <legend style="margin-bottom: 6rem; font-size: 1rem;">Motivos da percepção negativa (equipamentos)</legend>
+                                  <div style="margin-top: -5rem;">
+                                    <div class="checkbox">
+                                      <input type="checkbox" id="equipamentos" name="motivo" value="insumos">
+                                      <label for="equipamentos">Quantidade de equipamentos menor do que a solicitada/necessária</label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <input type="checkbox" id="quantidade-utensilios" name="motivo" value="quantidade-utensilios">
+                                      <label for="quantidade-utensilios">Quantidade de utensílios menor do que a solicitada/necessária (inclua panelas, frigideiras, formas entre outros)</label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <input type="checkbox" id="defeito-equipamentos" name="motivo" value="defeito-equipamentos">
+                                      <label for="defeito-equipamentos">Equipamentos não estavam funcionando ou faltando peças</label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <input type="checkbox" id="defeito-utensilios" name="motivo" value="defeito-utensilios">
+                                      <label for="defeito-utensilios">Utensílios deteriorados e precários (inclua panelas, frigideiras, formas entre outros)</label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <input type="checkbox" id="ausencia-equipamentos" name="motivo" value="ausencia-equipamentos">
+                                      <label for="ausencia-equipamentos">Equipamentos não estavam no laboratório no momento de aula</label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <input type="checkbox" id="ausencia-utensilios" name="motivo" value="ausencia-utensilios">
+                                      <label for="ausencia-utensilios">Utensílios não estavam no laboratório no momento de aula (inclua panelas, frigideiras, formas entre outros)</label>
+                                    </div>
+                                    <div class="checkbox">
+                                      <input type="checkbox" id="equipamentos-sujos" name="motivo" value="equipamentos-sujos">
+                                      <label for="equipamentos-sujos">Equipamentos sujos</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="utensilios-sujos" name="motivo" value="utensilios-sujos">
+                                        <label for="utensilios-sujos">Utensílios sujos</label>
+                                      </div>
+                                  </div>
+                                  <div class="outros" style="margin-top: 2rem;" >
+                                    <label for="firstname" style="display: block; font-size: 1rem;"> Outros</label>
+                                    <input type="text" name="nome" placeholder="Descreva o problema" style="border: none; background: none; border-bottom: 1px solid black; width: 80%; margin-top: 0.5rem;">
+                                     </div>
+                            
+                                <div class="continue-button" >
+                                    <button class="continue-button-left"><a href="equipamentos.html">Voltar</a></button>
+                                    <button class="continue-button-right"><a href="finalizar.html">Continuar</a></button>
+                                  </div>
+                            
+                              </form>
+                        </div>
+                          <div id="myModal" class="modal">
+                            <div class="modal-content">
+                              <span class="close">&times;</span>
+                              <p>Você pode ligar para a secretaria: (81) 3413 - 6657 ou entrar em contato com nosso monitor Giovane: 81 9 XXXX - XXXX</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <script>
+                          // seleciona o modal
+                          var modal = document.getElementById("myModal");
+                          
+                          // seleciona o botão que abre o modal
+                          var btn = document.getElementById("laboratorio-fechado");
+                          
+                          // seleciona o elemento <span> que fecha o modal
+                          var span = document.getElementsByClassName("close")[0];
+                          
+                          // quando o usuário clica no botão, abre o modal
+                          btn.onclick = function() {
+                            modal.style.display = "block";
+                          }
+                          
+                          // quando o usuário clica no <span> (x), fecha o modal
+                          span.onclick = function() {
+                            modal.style.display = "none";
+                          }
+                          
+                          // quando o usuário clica fora do modal, fecha-o
+                          window.onclick = function(event) {
+                            if (event.target == modal) {
+                              modal.style.display = "none";
+                            }
+                          }
+                          </script>
+                    
+    
+</body>
+
+</html>
